@@ -1,0 +1,6 @@
+g.V().hasLabel('Product')
+  .order().by(__.inE('REVIEWED').count(), Order.desc)
+  .limit(5)
+  .project('id', 'review_count')
+    .by(id())
+    .by(__.inE('REVIEWED').count())

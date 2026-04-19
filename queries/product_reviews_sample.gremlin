@@ -1,0 +1,1 @@
+g.V('amazon_apps_98248').inE('REVIEWED').limit(12)
